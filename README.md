@@ -5,7 +5,7 @@ to easily perform source-map lookups.
 
 ### Basic Usage
 
-The `single` command takes a string formatted as <filepath>:<line>:<col>.
+The `single` command takes a string formatted as `<filepath>:<line>:<col>`.
 It will attempt to find a sourcemap with the same filepath with a `.map` suffix.
 It prints an edn hash-map that contains an `:original-file-content` key that maps
 to a hash-map with line number keys and line content values.
@@ -54,7 +54,8 @@ TODO: The stacktrace functionality is a little rigid. One of the factors is that
 which may reflect the actual file structure of a project, but this is not always the case. For this reason, I
 have solved for allowing you to provide a couple of configuration params that are suited toward how clojurescript
 projects use the closure compiler. It'd be nice to work some of these things to be more general, but figured it is
-better to make some progress, and tweak it later.
+better to make some progress, and tweak it later. Because it is still being worked out, it is not part of the
+cli commands yet.
 
 ### Installation
 
